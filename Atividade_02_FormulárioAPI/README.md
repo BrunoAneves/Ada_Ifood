@@ -13,3 +13,6 @@ Este projeto é um exemplo simples de um formulário que consome uma API, realiz
 - HTML
 - CSS
 - JavaScript
+
+- ## Api Utilizada
+- https://reqres.in
