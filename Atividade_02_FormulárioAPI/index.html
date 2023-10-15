@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Novo Usuário</h1>
+    <form class="form" id="crudForm">
+      <label class="label" for="name">Nome:</label>
+      <input class="input" type="text" name="name" id="name" required>
+
+      <label class="label" for="email">Email:</label>
+      <input class="input" type="email" id="email" required>
+
+      <label class="label" for="cargo">Cargo:</label>
+      <input class="input" type="text" name="cargo" id="cargo" required>
+
+      <label class="label" for="number">Idade:</label>
+      <input class="input" type="number" name="number" id="age" required>
+
+      <label class="label" for="city">Cidade:</label>
+      <select name="city" id="city">
+        <option value="São Paulo">São Paulo</option>
+        <option value="Rio de Janeiro">Rio de Janeiro</option>
+        <option value="Maranhão">Maranhão</option>
+        <option value="Fortaleza">Fortaleza</option>
+        <option value="Brasília">Brasília</option>
+        <option value="Manaus">Manaus</option>
+      </select required>
+
+      <button type="submit" class="button">Criar Usuário</button>
+
+    </form>
+
+
+    <div id="resultado" class="tabela">
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Cargo</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+
+  <div id="response"></div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
